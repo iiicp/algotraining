@@ -21,7 +21,7 @@ void stringwordreverse(std::string &str){
 	char *pbegin = (char *)str.c_str();
 	char *p = pbegin;
 	while (*p) {
-		if (*p == ' ' || isdigit(*p)) {
+		while (isspace(*p) || isdigit(*p)) {
 			p++;
 			continue;
 		}
