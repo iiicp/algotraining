@@ -64,9 +64,9 @@ int myatoi(const char *str) {
 int main() {
 	printf("%d, %d\n", INT_MIN, INT_MAX);
 	printf("%ld, %ld\n", LONG_MIN, LONG_MAX);
-	printf("%lld, %lld\n", LONG_LONG_MIN, LONG_LONG_MAX);
+	printf("%lld, %lld\n", LLONG_MIN, LLONG_MAX);
 
-	const char *str = "  -2147483648";
+	const char *str = "21474836460";
 	int res1 = myatoi(str);
 	int res2 = atoi(str);
 	printf("res1 : %d, res2 : %d\n", res1, res2);
